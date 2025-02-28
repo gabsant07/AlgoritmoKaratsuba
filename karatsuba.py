@@ -12,9 +12,10 @@ def karatsuba(x, y):
     P2 = karatsuba(low_x, low_y)
     P3 = karatsuba(high_x + low_x, high_y + low_y)
     
-    return P1 * 10*(2*m) + (P3 - P1 - P2) * 10*m + P2
+    return P1 * 10**(2*m) + (P3 - P1 - P2) * 10**m + P2
 
-x = 1234
-y = 5678
-resultado = karatsuba(x, y)
-print(f"A multiplicação de {x} e {y} é: {resultado}")
+if __name__ == "__main__":
+    num1 = int(input("Digite o primeiro número: "))
+    num2 = int(input("Digite o segundo número: "))
+    resultado = karatsuba(num1, num2)
+    print(f"O resultado da multiplicação é: {resultado}")
