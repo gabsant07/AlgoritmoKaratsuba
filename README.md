@@ -46,7 +46,7 @@ def karatsuba(x, y):
     
     return P1 * 10**(2*m) + (P3 - P1 - P2) * 10**m + P2
 
-if __name__ == "__main__":
+   if __name__ == "__main__":
     num1 = int(input("Digite o primeiro número: "))
     num2 = int(input("Digite o segundo número: "))
     resultado = karatsuba(num1, num2)
