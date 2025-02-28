@@ -61,6 +61,9 @@ def karatsuba(x, y):
 ### Complexidade Ciclomática
 
 Número de arestas (E): 8
+
 Número de nós (N): 7
+
 Número de componentes conexos (P): 1
+
 Complexidade Ciclomática (M) = E - N + 2P = 8 - 7 + 2(1) = 3
